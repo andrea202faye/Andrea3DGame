@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6424029891948933820}
   - component: {fileID: 5270190340949132761}
   - component: {fileID: 3338450644768495304}
+  - component: {fileID: 1991225349259369352}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -92,6 +93,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2737787235487600949}
   m_Enabled: 1
+--- !u!114 &1991225349259369352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2737787235487600949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5be090b0afeef48b4949a4e2f01bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 200
+  playerBody: {fileID: 6238486378071636911}
 --- !u!1 &8922140401284340863
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +119,7 @@ GameObject:
   - component: {fileID: 2363726585993413004}
   - component: {fileID: 4207435407155841813}
   - component: {fileID: 4020284354830272646}
+  - component: {fileID: 4591872510791538843}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -205,3 +221,24 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4591872510791538843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8922140401284340863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd397815f72be344b8626e4336fc451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 4020284354830272646}
+  speed: 6
+  gravity: -9.81
+  jumpHeight: 1.5
+  groundCheck: {fileID: 0}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
